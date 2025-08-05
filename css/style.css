@@ -22,6 +22,20 @@ body {
   padding-inline: 0.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: light-dark(rgb(38, 38, 38), rgb(229, 229, 229));
+    text-decoration: underline;
+  }
+}
+
+section.index {
+  text-align: justify;
+}
+
 /* md:... */
 @media (width >= 48rem) {
   body {
@@ -88,14 +102,35 @@ body > aside nav a {
   transition-duration: 150ms;
   margin: 0.25rem;
   padding-block: 0.25rem;
-  text-decoration: none;
-  color: inherit;
   position: relative;
+}
 
-  &:hover {
-    color: light-dark(rgb(38, 38, 38), rgb(229, 229, 229));
-    text-decoration: underline;
+section.posts .post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0px;
+  gap: 0.5rem;
+
+  & > .date {
+    font-variant-numeric: tabular-nums;
+    color: light-dark(rgb(82, 82, 82), rgb(163, 163, 163));
   }
+
+  & > a {
+    letter-spacing: -0.025em;
+  }
+}
+
+/* md:... */
+@media (width >= 48rem) {
+  section.posts .post {
+    flex-direction: row;
+  }
+}
+
+footer {
+  margin-top: 2rem;
 }
 
 /* Transition between : fade */
