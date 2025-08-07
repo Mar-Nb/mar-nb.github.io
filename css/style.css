@@ -67,9 +67,9 @@ main {
   margin-top: 1.5rem;
 }
 
-main > header > h1 {
-  margin-bottom: 0;
-  font-size: 1.5rem;
+main > .index header > h1 {
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
   line-height: 2rem;
   font-weight: 600;
   letter-spacing: -0.05em;
@@ -152,6 +152,30 @@ footer {
       fill: light-dark(rgb(38, 38, 38), rgb(229, 229, 229));
     }
   }
+}
+
+.tags-container,
+.categories-container {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.tags-container span,
+.categories-container span {
+  margin-right: 0.5rem;
+}
+
+.post-title-archive {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.archive-title {
+  margin-bottom: 50px;
+}
+
+.full-post hr {
+  margin-top: 2rem;
 }
 
 /* Transition between : fade */
